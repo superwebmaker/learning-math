@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgMathic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b11"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="sigmaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="mathicGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#818cf8" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgMathic)"/>
+
+  <!-- Coordinate Grid Background -->
+  <path d="M96 96 h320 M96 176 h320 M96 256 h320 M96 336 h320 M96 416 h320" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+  <path d="M96 96 v320 M176 96 v320 M256 96 v320 M336 96 v320 M416 96 v320" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+
+  <!-- Compass Arc & Axes -->
+  <path d="M120 400 A 280 280 0 0 1 400 120" fill="none" stroke="rgba(56, 189, 248, 0.25)" stroke-width="4" stroke-dasharray="10 8"/>
+
+  <!-- Prominent Glowing Greek Sigma ∑ (Summation of Math) -->
+  <g filter="url(#mathicGlow)">
+    <path d="M375 140 H155 L260 256 L155 372 H375" fill="none" stroke="url(#sigmaGrad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
